@@ -3,3 +3,5 @@ services:
   - docker
 before_install:
   - docker build -t zyadalatar/simple-app -f Dockerfile.dev .
+script: 
+  docker run zyadalatar/simple-app

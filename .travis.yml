@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t zyadalatar/simple-app -f Dockerfile.dev .
 script: 
-  docker run zyadalatar/simple-app
+  docker run zyadalatar/simple-app npm run test -- --coverage
